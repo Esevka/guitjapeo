@@ -1,4 +1,3 @@
-
 fetch("https://guitjapeo.thl/api/info")
         .then(resp => resp.text())
         .then(text => {
